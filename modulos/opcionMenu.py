@@ -78,7 +78,10 @@ def adicionar_empleado():
             sw = 1
 
 def mostrar_empleado():
-    
+    os.system('cls')
+    for empleado in list_empleados:
+            print(f"{empleado.nombre} - {empleado.direccion} - {empleado.telefono} - {empleado.cedula} - {empleado.sueldo}")
+    key=input("digite una tecla para continuar....")
 
 
 def eliminar_empleado():

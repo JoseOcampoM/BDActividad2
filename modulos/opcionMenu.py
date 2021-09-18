@@ -53,7 +53,29 @@ def eliminar_lista():
     
 
 def adicionar_empleado():
-    
+    sw = 0
+    while (sw == 0):
+        os.system('cls')
+        nombre = input("Digite el nombre del empleado ==> ")
+        direccion = input("Digite la direccion ==> ")
+        telefono = input("Digite el telefono ==> ")
+        cedula = input("Digite la cedula ==> ")
+        sueldo = input("Digite el sueldo ==> ")
+
+        perso = Persona(nombre, direccion, telefono, cedula)
+        list_personas.append(perso)
+
+        emp = Empleado(nombre, direccion, telefono, cedula, sueldo)
+        list_empleados.append(emp)
+
+        print(""" 
+        
+        """)
+        opc = str(input("Quiere seguir ? (s/n) ==> "))
+        if(opc == 's'):
+            sw = 0
+        else: 
+            sw = 1
 
 def mostrar_empleado():
     

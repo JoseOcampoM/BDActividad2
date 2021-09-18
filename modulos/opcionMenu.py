@@ -90,8 +90,11 @@ def eliminar_empleado():
 
     for i in range(len(list_empleados)):
         if list_empleados[i].cedula == ced:
-            list_empleados.pop(i)
+            list_empleados.pop(i)   
 
 
 def salir():
-    
+    os.system('cls')
+    print("Chao papá....")
+    time.sleep(2)
+    sys.exit(0)

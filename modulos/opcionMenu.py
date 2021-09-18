@@ -85,7 +85,11 @@ def mostrar_empleado():
 
 
 def eliminar_empleado():
-    == ced:
+    os.system('cls')
+    ced = input("Digite el nombre del Empleado ==> ") 
+
+    for i in range(len(list_empleados)):
+        if list_empleados[i].cedula == ced:
             list_empleados.pop(i)
 
 

@@ -29,15 +29,27 @@ def adicionar_lista():
             
 
 def mostrar_lista():
+    os.system('cls')
+    for i in range(len(list_personas)):
+            print(f"{list_personas[i].nombre} - {list_personas[i].direccion} - {list_personas[i].telefono} - {list_personas[i].cedula}")
     
+    key = input("digite una tecla para continuar....")
 
 
 def eliminar_lista():
-    
+    os.system('cls')
+    print("Elimina de la lista...")
+    key=input("digite una tecla para continuar....")
 
 
 
 def eliminar_lista():
+    os.system('cls')
+    ced = input("Digite la cedula de la persona ==> ") 
+
+    for i in range(len(list_personas)):
+        if list_personas[i].cedula == ced:
+            list_personas.pop(i)
     
 
 def adicionar_empleado():
